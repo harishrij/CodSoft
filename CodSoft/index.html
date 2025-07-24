@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harishri J. Joshi Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 10%;
+      background: #f7d1d1;
+    }
+    .hero-text {
+      max-width: 60%;
+    }
+    .hero-text h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
+      font-size: 1.1em;
+    }
+    .hero img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #d48c8c;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+    .btn:hover {
+      background: #e2b2b2;
+    }
+
+    section {
+      padding: 40px 10%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .skills ul, .projects ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skills li, .projects li {
+      background: #f4f4f4;
+      margin: 10px;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Online Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>HARISHRI J. JOSHI</h2>
+      <p>Final Year CSE | Web Developer | Designer | Learner</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+    <img src="myphoto.jpeg" alt="Harishri photo">
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I’m a self-driven web developer with a strong passion for building websites that are clean, responsive, and user-friendly. Currently pursuing my degree in Computer Science, I have worked on projects like weather apps and personal portfolio websites, strengthening both my technical expertise and creative thinking.
+
+I enjoy learning new technologies and solving problems through code. My core skills include HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, and I have hands-on experience with Tailwind CSS to design aesthetic and accessible interfaces. I believe in writing clean, readable code and creating solutions that enhance user experiences.
+
+Beyond coding, I am a quick learner, highly adaptable, and detail-oriented, always striving to deliver quality work within deadlines. Whether working independently or in a team, I approach every project with dedication and a mindset to grow.</p>
+    <a href="harishri.resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <section id="skills">
+  <h3>Skills</h3>
+
+  <h4>Technical Skills:</h4>
+  <ul>
+    <li><strong>Programming Languages:</strong> Java, C++, Python</li>
+    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Libraries/Tools:</strong> pandas, numpy, scikit-learn, matplotlib, seaborn, MySQL</li>
+    <li><strong>Concepts:</strong> Data Structures & Algorithms, Object-Oriented Programming</li>
+  </ul>
+
+  <h4>Soft Skills:</h4>
+  <ul>
+    <li>Effective Time Management</li>
+    <li>Problem Solving</li>
+    <li>Communication Skills</li>
+    <li>Motivated Attitude</li>
+    <li>Teamwork & Collaboration</li>
+  </ul>
+</section>
+
+  <section id="projects">
+  <h3>Projects</h3>
+  <ul>
+    <li>
+      <strong>ATM Banking System:</strong>
+      <p>Developed a standalone ATM Banking System application using Java AWT/Swing for GUI design and MySQL for the backend database. The application simulates real-life banking functionalities such as user authentication with PIN verification, balance enquiry, cash withdrawal, and deposit operations. Implemented secure database connectivity using JDBC and ensured robust error handling to maintain data integrity. This project enhanced my skills in Java GUI development, database integration, and secure transaction logic implementation.</p>
+    </li>
+
+    <li>
+      <strong>House Price Prediction:</strong>
+      <p>Built a machine learning model in Python to predict California housing prices using linear regression. The project involved data collection and cleaning using pandas, exploratory data analysis and visualization with matplotlib and seaborn, and feature engineering for improving model performance. Trained and evaluated the regression model using scikit-learn to provide insights into how features like location, rooms, and income affect housing prices.</p>
+      <p>🔗 <a href="https://github.com/harishrij/house-price-prediction" target="_blank">GitHub Repository</a></p>
+    </li>
+
+    <li>
+      <strong>Weather App:</strong>
+      <p>Developed a responsive weather web application using HTML, CSS, and JavaScript that fetches and displays real-time weather data for any searched city using the OpenWeatherMap API. Key features include search functionality for cities worldwide, dynamic display of temperature, weather condition, humidity, and wind speed with an intuitive and clean user interface responsive across multiple devices. This project enhanced my understanding of API integration, asynchronous JavaScript (fetch API), and building interactive, user-friendly web apps.</p>
+    </li>
+  </ul>
+</section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Email: hrixrijoshi@gmail.com</p>
+    <p>Phone: +91-938998XXXX</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harishri J Joshi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

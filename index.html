@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harishri J Joshi | Portfolio</title>
+
+  <style>
+    /* Global Styles */
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background: #fdf6f9;
+    }
+
+    h1, h2, h3 { margin: 10px 0; }
+    p { margin: 5px 0 15px 0; }
+    a { text-decoration: none; }
+
+    /* Header / Hero Section */
+    header {
+      position: relative;
+      background: linear-gradient(rgba(244, 194, 194, 0.8), rgba(212, 140, 140, 0.8)), url('hero-bg.jpg') center center / cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-top: 20px;
+    }
+
+    .buttons { margin-top: 20px; }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #d48c8c;
+      color: white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #c07b7b;
+      transform: scale(1.05);
+    }
+
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background-color: #ddd;
+    }
+
+    /* About Me Section */
+    .about {
+      background: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+    }
+
+    /* Skills Section */
+    .skills {
+      background: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    /* Projects Section with Glassmorphism */
+    .projects {
+      background: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project {
+      max-width: 300px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #333;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project a {
+      color: #d48c8c;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    footer a {
+      color: #f4c2c2;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .project-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Hero Section -->
+  <header>
+    <div class="container">
+      <img src="myphoto.jpeg" alt="Harishri Joshi" class="profile-img" />
+      <h1>HARISHRI J. JOSHI</h1>
+      <p>Web Developer | Crafting Clean & Responsive Digital Experiences</p>
+      <div class="buttons">
+        <a href="mailto:hrixrijoshi@gmail.com" class="btn">Hire Me</a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="about" id="about">
+    <h2>ABOUT ME</h2>
+    <p>
+      I’m a self-driven web developer passionate about creating clean, responsive, and user-friendly websites.
+      With hands-on experience in HTML, CSS, JavaScript, and frameworks like React, I enjoy building intuitive
+      interfaces and solving real-world problems through code. I'm always learning, designing, and striving
+      to make the web better—one project at a time.
+    </p>
+  </section>
+
+ <!-- Skills Section -->
+<section class="skills">
+  <h2>TECHNICAL SKILLS</h2>
+  <ul>
+    <li><strong>Programming Languages:</strong> Java, C++, Python</li>
+    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Libraries/Tools:</strong> pandas, numpy, scikit-learn, matplotlib, seaborn, MySQL</li>
+    <li><strong>Concepts:</strong> Data Structures & Algorithms, Object-Oriented Programming</li>
+  </ul>
+
+  <h2 style="margin-top: 40px;">SOFT SKILLS</h2>
+  <ul>
+    <li>Effective Time Management, Problem Solving</li>
+    <li>Communication Skills, Motivated Attitude</li>
+    <li>Teamwork & Collaboration</li>
+  </ul>
+</section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project-list">
+
+      <div class="project">
+        <h3>ATM Banking System</h3>
+        <p>
+          Developed a <strong>Java-based ATM Banking System</strong> with a user-friendly GUI using <strong>AWT and Swing</strong>.
+          Integrated with a <strong>MySQL backend</strong> for secure account management and transactions, including balance enquiry,
+          deposit, and withdrawal. This project strengthened my understanding of <strong>GUI design and database interaction</strong>.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>House Price Prediction</h3>
+        <p>
+          Built a <strong>machine learning model</strong> to predict California housing prices using <strong>linear regression</strong>
+          in Python. Included feature analysis, model evaluation, and data preprocessing. This project helped me develop skills in
+          <strong>data analysis and ML implementation</strong>.
+        </p>
+        <p>
+          <a href="https://github.com/harishrij/house-price-prediction" target="_blank">View on GitHub</a>
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Weather App</h3>
+        <p>
+          Created a <strong>responsive web application</strong> using <strong>HTML, CSS, JavaScript</strong>, and the
+          <strong>OpenWeatherMap API</strong> to fetch and display real-time city weather data dynamically.
+          Focused on clean UI design and smooth user interaction. Strengthened my skills in <strong>API integration and asynchronous JavaScript</strong>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: <a href="mailto:hrixrijoshi@gmail.com">hrixrijoshi@gmail.com</a> | 938998XXXX</p>
+  </footer>
+
+</body>
+</html>
